@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    div{
+      font-size: 20px; 
+      color: red;
+    }
+    #box1{
+      color: blueviolet;
+    }
+    #box2{
+      color: brown;
+    }
+    .a{
+      font-size: x-large;
+    }
+    .b{
+      font-size: xx-large;
+    }
+    P.a{
+      font-size: 50px; 
+      color: blue;
+    }
+    .mother .a{
+      font-size: 100px;
+    }
+    
+    h1, div, .a, #box{
+      font-size: large;
+    }
+  </style>
+</head>
+<body>
+  <!--div // block
+  span // inline
+  id>class>div-->
+  <h1>CSS</h1>
+  <div class="mother">
+    <div id="box1" class="a">박스1</div>
+  </div>
+  <div id="box2" class="a b">박스2</div>
+  <div>박스3</div>
+  <p>문단1</p>
+  <p class="dog">dog</p>
+  <p style="color: black;">제일 강력해 하지만 외부로 쓰는게 좋음</p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .b {
+      font-size: small;
+    }
+
+    .popup {
+      width: 400px;
+      height: 400px;
+      border: 2px solid black;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <p id="block" class="b"></p>
+  <!-- <button type="button" onclick="alert('누르셨군요.')">누르시오</button> -->
+  <button type="button" onclick="myEvent();">누르시오</button>
+  <div class="popup">새창입니다.</div>
+  <script>
+    // <요소 이벤트명="스크립트">
+    function myEvent() {
+      //document.write("누르셨군요.");
+      //document.getElementById("block").innerHTML = "누르셨군요.";
+      window.open("w0209.html", "newWin", "width=400, height=400")// 새로운 창에 파일 열기
+    }
+
+  </script>
+</body>
+
+</html>

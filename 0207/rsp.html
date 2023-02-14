@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가위바위보</title>
+</head>
+<body>
+  <script>
+    let user = prompt('가위, 바위, 보 중 하나를 내세요.');
+    const computer=["가위", "바위", "보"];
+    let usr;
+
+    // switch (user) {
+    //   case '가위':
+    //   usr=0;
+    //   case '바위':
+    //   usr=1;
+    //   case '보':
+    //   usr=2;
+    // }
+    
+  let computerResult=(computer[Math.floor(Math.random()*3)]);
+document.write(`당신은 ${user}를 냈고 컴퓨터는 ${computerResult}를 냈습니다. `);
+
+  // let draw=("가위"==="가위");
+  // let win=("가위"==="보", "바위"==="가위", "보"==="바위");
+  // let lose=("보"==="가위", "가위"==="바위", "바위"==="가위");
+if (user==="가위"&&computerResult==="가위"){
+  document.write("비겼음");
+} else if (user==="가위"&&computerResult==="보"){
+  document.write("이김");
+} else if (user==="바위"&&computerResult==="가위"){
+  document.write("이김");
+} else if (user==="보"&&computerResult==="바위"){
+  document.write("이김");
+} else if (user==="보"&&computerResult==="가위"){
+  document.write("졌음");
+} else if (user==="가위"&&computerResult==="바위"){
+  document.write("졌음");
+} else if (user==="바위"&&computerResult==="가위"){
+  document.write("졌음");
+} 
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가위바위보</title>
+</head>
+<body>
+  <script>
+    const user = prompt('가위, 바위, 보 중 하나를 내세요.');
+    const computer = ["가위", "바위", "보"];
+    const computerResult = computer[Math.floor(Math.random() * 3)];
+    let result;
+    
+    if (user === computerResult) {
+      result = "비겼";
+    } else if ((user === "가위" && computerResult === "보") || (user === "바위" && computerResult === "가위") || (user === "보" && computerResult === "바위")) {
+      result = "이겼";
+    } else {
+      result = "졌";
+    }
+    // ( || = or )
+    document.write(`당신은 ${user}를 냈고 컴퓨터는 ${computerResult}를 냈습니다. 당신는 ${result}습니다.`);
+  </script>
+</body>
+</html>
+

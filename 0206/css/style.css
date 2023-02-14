@@ -1,0 +1,16 @@
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+i{
+  color: red;
+}
+.join{
+  width: 300px;
+  height: 100px;
+  border: blue;
+  margin: 100px 800px;
+
+}
+h1{
+  font-weight: bold;
+  }

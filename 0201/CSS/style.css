@@ -1,0 +1,27 @@
+body{
+  font-size: 16px;
+  color: black;
+  font-weight: normal;
+  font-family: '맑은고딕',Verdana, Geneva, Tahoma, sans-serif;
+  background: white url(../image/p_mainv_sakuragi_sp.png) center;
+}
+h1 span{
+  width: 400px;
+  height:50px;
+  background-color: aqua;
+}
+.box{
+  width: 500px;
+  height: 400px;
+  overflow: auto; /*overflow-x, overflow-y*/
+  background-color: rgb(197, 197, 46);
+  background-image: url(/main_image/p_mainv_sakuragi_sp.png); /*제일 앞부터*/
+  background-repeat: no-repeat;   /*repeat, repeat-x, repeat-y*/
+  background-attachment: local;  /*fixed, scroll(기본)*/
+  }
+.box2{
+  width: 500px;
+  height: 400px;
+  overflow: auto;
+  background: palegreen url(/main_image/p_mainv_sakuragi_sp.png) repeat right top fixed; /*한번에 가능*/
+}

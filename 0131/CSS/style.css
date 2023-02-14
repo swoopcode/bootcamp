@@ -1,0 +1,22 @@
+body{
+  background-color: black;
+}
+#chapter1-1 h2{
+  background-color: hsl(hue, saturation, lightness);
+}
+#chapter1-1 p{
+  background-color: rgb(32, 103, 224,0.5);/*마지막은 투명도*/
+}
+#chapter1-2 h2{
+  background-color: #900100;
+}
+
+.chapter{
+  color:green;
+}
+#chapter1-2{
+color: blue;
+}
+#chapter1-3 p{
+  color: red;
+}

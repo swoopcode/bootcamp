@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마스크 공장</title>
+</head>
+<body>
+  <!--마스크 공장에 마스크를 담을 수 있는 봉투가 3개입, 5개입 두 종류가 있다.
+
+   최대한 적은 봉투를 사용하여 마스크를 담고자 한다.
+
+   예를 들어 18개의 마스크가 있다면 
+   3개입 봉투 6개를 사용할 수 있지만
+   5개입 3개와 
+   3개입 1개로 담으면 더 적은 봉투를 사용하는 것이다.
+
+   n개의 마스크를 담기 위해서는 필요한 최소한의 팩수를 구하는 공식을 만들라.
+   단, 정확하게 담지 못할 경우 -1을 출력 시켜라.-->
+   
+   <script>
+    let mask=prompt("몇개??", "0") 
+    let five = 0; 
+    let three = 0;
+   
+    for (let i = mask; i >= 5; i -= 5) {
+      five++;
+    }
+    
+    for (let i = mask - five * 5; i >= 3; i -= 3) {
+      three++;
+    }
+    
+    let remaining = mask - five * 5 - three * 3;
+    
+    if (remaining!=0) {
+      document.write("-1");
+    } else {
+    document.write("5개짜리: " + five, "<br>");
+    document.write("3개짜리: " + three, "<br>");
+    }
+    // 1. mask = 14 
+    // 2. 5보다 크거나 같으면 참
+    // 3. i=i-5 5를 빼면 9
+    // 4. five =0 에 1을 더함..... 1 = five
+    // 5. 한바퀴 끝
+    // 6. 5보다 크거나 같으면 9니까 참
+    // 7. 9-5=4
+    // 8. five =1 + 1 ......2가 됨
+    // 9. 그리고 mask = 14-2*5 .....4
+    // 10. 그리고 i=i-3
+    // 11. three = 0+1 .....1 =three
+    // 12. 한바퀴 끝
+    // 13. i가 3보다 작아졌으니 아래로 나옴
+    // 14. remaining은 마스크 14개-five 2*5-three 1개*3 = 1
+    // 15. 0같지 않으면 참, remaining=1 이므로 아래 실행
+  </script>
+
+</body>
+</html>

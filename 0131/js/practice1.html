@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let transport=4000;
+    let food=9000;
+    let drink=3000;
+    let goodExpanse=15000;
+    let transportQ=prompt("당신의 교통비는?");
+    let foodQ=prompt("당신의 식비는?");
+    let drinkQ=prompt("당신의 음료비는?");
+    let result=Number(transportQ)+Number(foodQ)+Number(drinkQ);
+    let result3=(result-goodExpanse);
+    let result1=(goodExpanse>result)? "돈 관리 잘했어요.":result3+"원 초과입니다.";
+    document.write(result1);
+    console.log(result1);
+   </script>
+</body>
+</html>

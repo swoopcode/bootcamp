@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  //문자열을 출력할 때 따옴표로 싸서 출력
+  //숫자는 그대로
+  //변수도 그대로
+  //자바스크립트의 산술 연산자
+  // +, -, *, /, %:(나머지)
+  //a+b, a-b, a*b, a/b, a%b
+  let str1 ="자바는 역시";
+  document.write(str1 + " 어렵습니다.", "<br>");
+
+  let num1=20;
+  let num2=10;
+  result=num1+num2;
+  document.write(result,"<br>");
+  
+  let num3=10;
+  result+=num3;//result=result+num3
+  document.write(result,"<br>");
+
+  let num4=10;
+  result=++num4;
+  document.write(result,"<br>");
+  
+  let num5=10;
+  num5--;
+  document.write(num5,"<br>");
+
+  num6=10
+  result=num6++;
+  document.write(result, "<br>");
+  document.write(num6, "<br>");
+  document.write("<br>")
+  
+  
+  let a=10, b=20, c=10, f="20";
+  result=a>b;
+  document.write("1. ",result,"<br>")
+  result=a<b;
+  document.write("2. ",result,"<br>")
+  result=a<=b;
+  document.write("3. ",result,"<br>")
+  result=b==f;
+  document.write("4. ",result,"<br>")
+  result=a!=b;
+  document.write("5. ",result,"<br>")
+  result=b===f;
+  document.write("6. ",result,"<br>")
+  
+  document.write(a>b,"<br>", a<b,"<br>", a<=b,"<br>", b==f,"<br>", a!=b,"<br>", b===f);
+
+  document.write("<br>조건연산자<br>")
+  let i=10;
+  let h=20;
+  let m=30;
+  let n=40;
+
+  let rs;
+  rs=i>h||h>=m||h>n; 
+  document.write(rs);
+  document.write("<br>")
+  
+  rs=i>h||h>=m||m<+n;
+  document.write(rs);
+
+  document.write("<br>")
+  
+  document.write("<br>")
+
+
+
+
+  let str;
+  str="<h1>남으로 창을 내겠소</h1>";
+  str+="<p>남(南)으로<br>창(窓)을 내겠소.</p><p>밭이 한참갈이<br>괭이로 파고<br>호미론 김을 매지요.</p><p>구름이 꼬인다<br>갈 리 있소.</p><p>새 노래는 공으로 들으랴오.</p><p>강냉이가 익걸랑<br>함께 와 자셔도 좋소</p><p>왜 사냐건<br>웃지요.</p>";
+    
+  document.write(str);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let mask=prompt("몇개??", "0") 
+    let five = 0; 
+    let three = 0;
+   
+    for (let i = mask; i >= 5; i -= 5) {
+      five++;
+    }
+    
+    for (let i = mask - five * 5; i >= 3; i -= 3) {
+      three++;
+    }
+     
+    let remaining = mask - five * 5 - three * 3;
+  
+    document.write("5개짜리: " + five, "<br>");
+    document.write("3개짜리: " + three, "<br>");
+    document.write("남은거: " + remaining);
+  
+  </script>
+
+  
+</body>
+</html>

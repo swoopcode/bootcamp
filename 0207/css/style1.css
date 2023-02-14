@@ -1,0 +1,21 @@
+
+.box1, .box2{
+  width: 200px;
+  height: 200px;
+  display: block;
+  position:static;/*기본값으로 박스는 위치값을 갖지 않으며 주변 상황에 맞게 위치된다.*/
+}
+.box1{
+  width: 1200px;/*visibility: hidden; 사라지만 보이지만 않는 상태, display: none; 완전히 사라져서 box2가 자리를 차지함*/ background-color: red;
+  position:static;
+}
+.box2{
+  max-width:1200px;
+  background-color: blue;
+  position:absolute;
+}
+/*max-width는 최대 1200까지 늘어남 반응형 웹사이트에 활용, min-, -height*/
+/* 
+position:static; 기본 값
+position:absolute;
+position:relative; 자식이 앱솔루트면 부모는 자동으로 앱솔루트*/

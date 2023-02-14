@@ -1,0 +1,19 @@
+body{
+  font-size: 20px;
+  background-size: auto;
+  background:center no-repeat;
+  background-image: url(../image/1570451977642.jpg);
+}
+h1{
+  font-size: 60px;
+}
+h2{
+  font-size: 45px;
+}
+h3{
+  font-size: 35px;
+}
+.writer{
+  font-size: 30px;
+
+}

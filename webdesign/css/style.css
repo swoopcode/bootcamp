@@ -1,0 +1,148 @@
+*{
+  
+  font-family: 'Single Day', cursive;
+}
+.container{
+  width: 1440px;
+  height: 1024px;
+  background-color: beige;
+}
+.header{
+  width: 1200px;
+  height: 100px;
+  background-color: blanchedalmond;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  columns: 4;
+  gap: 40px;
+  font-size: 40px;
+  text-align: center;
+}
+.menu1{
+  margin: auto;
+  width: 25%;
+  margin-left: 10px;
+  background-color: chocolate;
+  border-radius: 20%;
+  border: 3px solid black;
+}
+.menu2{
+  margin: auto;
+  width: 25%;
+  background-color: chocolate;
+  border-radius: 20%;
+  border: 3px solid black;
+}
+.menu3{
+  margin: auto;
+  width: 25%;
+  background-color: chocolate;
+  border-radius: 20%;
+  border: 3px solid black;
+}
+.menu4{
+  margin: auto;
+  width: 25%;
+  margin-right: 10px ;
+  background-color: chocolate;
+  border-radius: 20%;
+  border: 3px solid black;
+}
+.banner1{
+  width: 1200px;
+  height: 300px;
+  margin: auto;
+  background: url(/webdesign/img/banner.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: blanchedalmond;
+}
+.banner1:hover .overlay {
+  opacity: 0.5;
+}
+.bannerText {
+  color: black;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.main{
+  width: 1200px;
+  height: 200px;
+  background-color: blanchedalmond;
+  margin: auto;
+  position: relative;
+  display: flex;
+  columns: 3;
+  font-size: 20px;
+  text-align: center;
+  gap: 10px;
+}
+.notice{
+  margin: auto;
+  width: 33%;
+  height: 90%;
+  margin-left: 10px ;
+  background-color: cornsilk;
+  text-decoration: underline;
+  
+}
+.picture{
+  margin: auto;
+  width: 33%;
+  height: 90%;
+  background-color: rgb(204, 212, 191);
+  text-decoration: underline;
+}
+.banner2{
+  margin: auto;
+  width: 33%;
+  margin-right: 10px;
+  height: 90%;
+  background: url(/webdesign/img/banner2.jpg) no-repeat center;
+  background-size: cover;
+}
+.footer{
+  width: 1200px;
+  height: 100px;
+  background-color: blanchedalmond;
+  margin: auto;
+  position: relative;
+  display: flex;
+  columns: 3;
+  font-size: 20px;
+  gap: 10px;
+}
+.copyRight{
+  margin: auto;
+  width: 50%;
+  height: 100%;
+  margin-left: 10px ;
+  margin-bottom: 10px;
+  background-color: cornsilk;
+}
+.logo{
+  margin: auto;
+  width: 50%;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  height: 100%;
+  background: url(/webdesign/img/banner2.jpg) no-repeat center;
+  background-size: cover;
+}

@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  /*모두 인라인으로 만듬*/
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.banner {
+  height: 400px;
+  background-color: pink;
+  text-align: center;
+  font-size: 100px;
+  color: #ccc;
+  padding-top: 100px;
+
+}
+
+header {
+  height: 80px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding-top: 30px;
+  background-color: antiquewhite;
+}
+
+header::before {
+  content: "안녕안녕";
+}
+
+header:hover::before {
+  background-color: black;
+}
+
+section {
+  margin-bottom: 80px;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed #ccc;
+}
+
+a:hover {
+  color: yellow;
+}
+
+section p:first-child {
+  background-color: aqua;
+}

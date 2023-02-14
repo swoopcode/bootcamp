@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/97bdcb5d0b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<h1>기본정보</h1>
+ <div>
+  <form action="" method="post">
+    <label for="username"><i class="fa-solid fa-check"></i>이름
+      <input type="text" name="name" value="" id="name" placeholder="이름" required>
+    </label><br>
+  </form>
+ </div>
+ <div>  
+    <label for="gender"><i class="fa-solid fa-check"></i>성별
+      <input type="radio" name="char" value="남성" checked>남성
+      <input type="radio" name="char" value="여성" checked>여성
+    </label><br>
+ </div>
+    <label for="username"><i class="fa-solid fa-check"></i>아이디
+      <input type="text" name="username" value="" id="username" placeholder="아이디" required>
+    </label><br>
+
+    <label for="usertel">전화번호
+          <select name="select" id="regionNumber1"> <!--드랍다운 메뉴-->
+          <option value="서울">02</option>
+          <option value="경기">031</option>
+          <option value="충청">032</option>
+          <option value="전라">043</option>
+        </select>       
+      -<input type="number" name="usertel1" id="usertel1">-<input type="number" name="usertel2" id="usertel2">
+    </label>
+    <br>
+
+    <label for="usertel"><i class="fa-solid fa-check"></i>휴대폰번호
+      <select name="select" id="regionNumber2" required> <!--드랍다운 메뉴-->
+      <option value="010">010</option>
+      <option value="011">011</option>
+      <option value="017">017</option>
+      <option value="018">018</option>
+    </select>       
+      -<input type="number" name="usertel3" id="usertel3">-<input type="number" name="usertel4" id="usertel4">
+    </label><br>
+    
+    <label for="username"><i class="fa-solid fa-check"></i>이메일
+      <input type="text" name="email1" id="email1" required>@<input type="text" name="email2" id="email2" required>
+      <select name="select" id="email3" > <!--드랍다운 메뉴-->
+        <option value="naver.com">naver.com</option>
+        <option value="gmail.com">gmail.com</option>
+        <option value="hotmail.com">hotmail.com</option>
+        <option value="icloud.com">icloud.com</option>
+      </select>
+    </label><br>
+    
+    <p class="join">회원가입</p>
+
+
+  </form>
+</body>
+</html>

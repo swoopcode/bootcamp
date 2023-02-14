@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p class="now">지금 시간은 <span id="now"></span>입니다.</p>
+
+  </p>
+  <script>
+    // let num = 0;
+    // let endNum = 100;
+    // let auto = setInterval(function () {
+    //   num++;
+    //   console.log(num);
+    // }, 1000);
+
+    // setInterval(function myTime() {
+    //   let dt = new Date();
+    //   let hour = dt.getHours();
+    //   let minute = dt.getMinutes();
+    //   let second = dt.getSeconds();
+    //   let nowTime = hour + "시" + minute + "분" + second + "초"
+
+    //   document.getElementById("now").innerHTML = nowTime;
+    // }, 1000);
+
+    setInterval(myTime, 1000);
+    function myTime() {
+      let dt = new Date();
+      let hour = dt.getHours();
+      let minute = dt.getMinutes();
+      let second = dt.getSeconds();
+      let nowTime = hour + "시" + minute + "분" + second + "초"
+
+      document.getElementById("now").innerHTML = nowTime;
+    }
+//아래 코드가 보기 좋다.
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../0206/css/formstyle.css">
+</head>
+<body>
+  <form action="" method="post">
+  <div class="container">
+    <ul>
+      <li>
+        <span class="check" for="">이름</span>
+        <input type="text" name="username" id="username" placeholder="이름" required>
+      </li>
+
+      <li>
+        <span class="check"for="">성별</span>
+        <label><input type="radio" name="gender" id="male" value="male" checked>남성</label>
+        <label><input type="radio" name="gender" id="female" value="female">여성</label>
+        
+      </li>
+      <li>
+        <span class="check" for="">아이디</span>
+        <input type="text" name="userid" id="userid" placeholder="아이디" required>
+      </li>
+      <li>
+        <span class="unchecked" for="">전화번호</span>
+          <label>
+            <select name="regionNumber" id="regionNumber1"> <!--드랍다운 메뉴-->
+            <option value="서울">02</option>
+            <option value="경기">031</option>
+            <option value="충청">032</option>
+            <option value="전라">043</option>
+          </select>
+          -<input type="number" name="usertel1" id="usertel1">-<input type="number" name="usertel2" id="usertel2">
+          </label>
+      </li>
+      <li>
+        <span class="check" for="">휴대폰번호</span>
+        <label>  
+        <select name="select" id="regionNumber2" required> <!--드랍다운 메뉴-->
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+          </select>
+          -<input type="number" name="usertel3" id="usertel3">-<input type="number" name="usertel4" id="usertel4">
+        </label>
+        </li>
+
+      <li>
+        <span class="check" for="">이메일</span>
+        <label>
+        <input type="text" name="email1" id="email1" required>@<input type="text" name="email2" id="email2" required>
+        <select name="select" id="email3" > <!--드랍다운 메뉴-->
+          <option value="naver.com">naver.com</option>
+          <option value="gmail.com">gmail.com</option>
+          <option value="hotmail.com">hotmail.com</option>
+          <option value="icloud.com">icloud.com</option>
+        </select>
+        </label>
+        </li>
+    </ul>
+  <div class="btn-box">
+       <button type="submit" href="#" class="myButton" type="myButton">회원 가입</button>
+  </div>
+</form>
+<label>파일 전송 <input type="file"></label>
+</body>
+
+</html>

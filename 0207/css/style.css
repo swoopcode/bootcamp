@@ -1,0 +1,57 @@
+/* .box1{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  margin-top: 200px;
+  margin-left: 200px;
+  border: 1px solid black;
+  z-index: 1;
+}
+.box2{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: greenyellow;
+  border: 1px solid black;
+  margin-top: -100px;
+  margin-left: 300px;
+  z-index: 2;
+}
+.box3{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  margin-top: -100px;
+  margin-left: 400px;
+  border: 1px solid black;
+  z-index: 1;
+} */
+.container{
+  width: 1000px;
+  height: 1000px, auto;
+  position: relative;
+}
+
+.container div{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+.box1{
+  background-color: blue;
+  top: 0;
+  left: 0;
+}
+.box2{
+  background-color: greenyellow;
+  top: 75px;
+  left: 75px;
+  z-index: 1;
+}
+.box3{
+  background-color: rosybrown;
+  top: 150px;
+  left: 150px;
+}

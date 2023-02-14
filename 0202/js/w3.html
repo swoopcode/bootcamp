@@ -1,0 +1,69 @@
+<script>
+
+  let sum = 0;
+ 
+         for (let n = 1; n <= 101; n++) {
+ 
+             if (n < 101) {
+ 
+                 sum += n
+ 
+             } else {
+ 
+                 document.write(sum)
+ 
+             }
+ 
+         }
+ 
+ </script>
+ 
+  
+ 
+  
+ 
+ 2.
+ 
+ <script>
+ 
+         let mk = prompt("마스크는 몇개입니까?");
+ 
+         let rs = 0;
+ 
+         let five = 0;
+ 
+         let three = 0;
+ 
+  
+ 
+         for (let i = 0; i <= parseInt(mk / 5); i++) {
+ 
+             five = i
+ 
+  
+ 
+         } if ((mk - (five * 5)) >= 3) {
+ 
+             for (let i = 0; i <= parseInt((mk - (five * 5)) / 3); i++) {
+ 
+                 three = i
+ 
+             }
+ 
+         } else if ((mk - (five * 5)) == 0) {
+ 
+         } else {
+ 
+             document.write("<br>" + "-1" + " 정확하게 안담깁니다.")
+ 
+         }
+ 
+  
+ 
+         document.write("<br>" + five + "개의 5개봉투가 필요")
+ 
+         document.write(three + "개의 3개봉투가 필요")
+ 
+  
+ 
+     </script>

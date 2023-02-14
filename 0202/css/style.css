@@ -1,0 +1,27 @@
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-size: 18px;
+  font: italic small-caps bold 14px/30px 'Noto Sans KR', sans-serif; /*축약 가능*/
+}
+.a{
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 100%; /*화면의 크기에 따라 같은 비율로 조절됨*/
+}
+.b{
+  font-family: 'Nanum Pen Script', cursive;
+  font-weight: 40;/*두께*/
+  
+}
+span{
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+}
+.c{
+  font-family: 'Dongle', sans-serif;
+  font-size: 10vh; /*화면 크기에 상관 없이 같은 사이즈로 출력*/
+}
+.d{
+  /*text-transform: capitalize; 첫 글자만 대문자로 바꿈*/
+  font-variant: small-caps; /*마찬가지로 첫 글자 대문자로*/
+}

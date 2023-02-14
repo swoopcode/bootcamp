@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // let num1=prompt("0");
+    // let num2=prompt("0");
+
+    // function myfuncton(a,b) {
+    //   return (a*b);
+    // }
+    // document.write(myfuncton(num1,num2));
+
+    //섭씨에서 화씨로
+    // let tempC=prompt("0");
+    
+    // function tempConv() {
+    //   return ((tempC * 9/5) + 32);
+    // }
+
+    // document.write(tempConv());
+    
+    // 1.
+    // let i = 5;
+    
+    // while (i === 5) {
+    // document.write(i+"단","<br>");
+    
+    
+    // let j = 1;
+    // while (j <= 9) {
+    // document.write(i + "*"+ j + "=", + (i * j), "<br>")
+    // j++;
+    // }
+    // i++;
+    // }
+      // 2.
+      // for (let i = 2; i <= 9; i++) {
+      // document.write(i + "<br>");
+    
+      // for (let j = 1; j <= 9; j++) 
+      // document.write(i + "*"+ j + "=", + (i * j), "<br>");
+      // }
+        //3.
+        // let n=prompt("구구단의 몇단을 할까요?","0")
+        // document.write( n + "단<br>");
+        // function mult(a){
+        //   for (i = a; i < 10;i++) {
+        //     for (j = 1; j < 10; j++) {
+        //         document.write(i, "*", j, "=", i*j, "<br>");
+        //     } break;
+        //   }   
+        // } mult(n)
+        
+        //4.
+        var a=parseInt(prompt("숫자를 입력하세요.","0"));
+        var b=parseInt(prompt(a+"를 골랐군요. 두번째 숫자를 입력하세요.","0"));
+        var c=parseInt(prompt(a+"와 "+b+"를 골랐군요. 세번째 숫자를 입력하세요.","0"));
+        var d=prompt(a+"와 "+b+"와 "+c+"를 골랐군요. 더하기(+), 빼기(-),곱하기(*), 나누기(/) 중 어떤 계산을 할까요?", "+, -, *, / 중에 입력하세요.");
+        
+        function cal(num1, num2, num3, opr) {
+          if (opr==="+") {
+            let result = num1 + num2 + num3;
+            document.write(num1," + ",num2," + ",num3," = ",result);
+          } else if (opr==="-") {
+            let result=num1-num2-num3;
+            document.write(num1," - ",num2," - ",num3," = ",result);
+          } else if (opr==="*") {
+            let result=num1*num2*num3;
+            document.write(num1," * ",num2," * ",num3," = ",result);
+          } else if (opr==="/") {
+            let result=parseInt(num1/num2/num3);
+            document.write(num1," / ",num2," / ",num3," = ",result);
+          }
+        } cal(a,b,c,d)
+  </script>
+</body>
+</html> 
