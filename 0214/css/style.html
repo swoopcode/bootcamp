@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* block + inline ---> inline block
+        float 문제 center 없고 clear 해야 다음 것이 정렬됨
+         */
+        .container{
+            background-color: dodgerblue;
+            width: 1000px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* display: flex; 부모가 같는 옵션 */
+            /* flex-direction: row;
+            border: 2px solid red; */
+            /* flex-wrap: wrap; */
+            /* flex-flow: row wrap;
+            justify-content: space-between;
+            width: 1200px;
+            height: 1000px;
+            align-items: center;
+            align-content: center; */
+            /* justify-content: center; flex-start, flex-end */
+        }
+        /* .container::after{
+            clear:both;
+            content: "";
+            display: table; */
+        
+        .container>div{
+            width: 150px;
+            height: 150px;
+            background-color: aliceblue;
+            font-size: 100px;
+            text-align: center;
+            /* margin: 100px;
+            padding: 50px;
+            font-size: 50px;
+            background-color: #ededed;
+            border: 2px solid black; */
+            /* float:left; */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+    
+        
+    </div>
+</body>
+</html>

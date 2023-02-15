@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style>
+    .container{
+        width: 1200px;
+        margin: auto;
+        position: relative;
+    }
+    .container div{
+        width: 150px;
+        height: 150px;
+        background: #333;
+        margin: 30px;
+      
+    }
+    
+  </style>
+  <script>
+     function ani(e){ 
+        switch (e) {
+            case 1:
+                document.getElementsByClassName('box')[0].classList.add("animate__bounce");
+                break;
+            case 2:
+                document.getElementsByClassName('box')[1].classList.add("animate__flip");
+                break;
+            case 3:
+                document.getElementsByClassName('box')[2].classList.add("animate__flash");
+                break;
+        }
+          const x = document.getElementById('box1');
+          e.classList.toggle('change');
+          x.classList.toggle("active");
+       }
+  </script>
+</head>
+<body>
+    <div class="container">
+        <div class="box animate__animated"></div>
+        <div class="box animate__animated"></div>
+        <div class="box animate__animated"></div>
+        <button onclick="ani(1)"">1. 애니메이션 실행</button>
+        <button onclick="ani(2)"">2. 애니메이션 실행</button>
+        <button onclick="ani(3)"">3. 애니메이션 실행</button>
+    </div>
+    
+</body>
+</html>anima

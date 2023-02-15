@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .card>img{
+            max-width: 100%;
+
+        }
+        .container{
+            max-width: 1200px;
+            margin: 30px auto;
+            border: 2px solid black;
+            
+        }
+        .row{
+            display: flex;
+            margin-left: -15px;
+            margin-right: -15px;
+            flex-wrap: wrap;
+            
+            
+
+        }
+        .col-4{
+            width: 25%;
+            padding: 15px;
+            
+        }
+        .card {
+            position: relative;
+        }
+        .text-box{
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            left: 0;
+            bottom: -50%;
+            background-color: rgba(255,255,255,0.7);
+            opacity: 0;
+            z-index: 2;
+            transition: all 0.3s;
+        }
+        .card:hover>.text-box{
+            opacity: 1;
+            bottom: 0;
+        }
+        .right{
+            margin-left: right;
+        }
+        .right button{
+            margin-left: 20px;
+        }
+    </style>
+    <script>
+        function sort(e){ 
+        switch (e) {
+            case 1:
+                document.getElementsByClassName('three')[0].classList.add("animate__bounce");
+                break;
+            case 2:
+                document.getElementsByClassName('five')[1].classList.add("animate__flip");
+                break;
+        }
+          const x = document.getElementById('three');
+          e.classList.toggle('change');
+          x.classList.toggle("active");
+       }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="right">
+            <button class="three" onclick="sort(1)">3개씩 보기</button>
+            <button class="five" onclick="sort(2)">5개씩 보기</button>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img src="/main_image/p_mainv_sakuragi_sp.jpg" alt="a">
+                    <div class="text-box">블라블라</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="/main_image/p_mainv_sakuragi_sp.jpg" alt="a">
+                    <div class="text-box">블라블라</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="/main_image/p_mainv_sakuragi_sp.jpg" alt="a">
+                    <div class="text-box">블라블라</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="/main_image/p_mainv_sakuragi_sp.jpg" alt="a">
+                    <div class="text-box">블라블라</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="/main_image/p_mainv_sakuragi_sp.jpg" alt="a">
+                    <div class="text-box">블라블라</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="/main_image/p_mainv_sakuragi_sp.jpg" alt="a">
+                    <div class="text-box">블라블라</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="/main_image/p_mainv_sakuragi_sp.jpg" alt="a">
+                    <div class="text-box">블라블라</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="/main_image/p_mainv_sakuragi_sp.jpg" alt="a">
+                    <div class="text-box">블라블라</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="/main_image/p_mainv_sakuragi_sp.jpg" alt="a">
+                    <div class="text-box">블라블라</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="/main_image/p_mainv_sakuragi_sp.jpg" alt="a">
+                    <div class="text-box">블라블라</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="/main_image/p_mainv_sakuragi_sp.jpg" alt="a">
+                    <div class="text-box">블라블라</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="/main_image/p_mainv_sakuragi_sp.jpg" alt="a">
+                    <div class="text-box">블라블라</div>
+                </div>
+            </div>        
+        </div>
+
+    </div>
+</body>
+</html>

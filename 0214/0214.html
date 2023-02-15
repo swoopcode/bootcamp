@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+        /*
+            --애니메이션을 기다리는 delay 실행시간 duration
+            1. animation-name
+            2. animation-duration
+            3. animation-delay
+            4. animation-iteration-count : infinite
+            5. animation-timing-function
+            6. animation-fill-mode : 애니메이션이 시작되기 전이나 끝난 후 어떤 값을 적용할지?
+                                        none, forwards, backwards, both
+            7. animation-direction: normal, reverse, alternate, alternate-reverse
+        */
+        div{
+            top: 0;
+            height: 300px;
+            width: 100%;
+            background-color: yellow;
+            /* animation-name: working;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite; */
+            animation: working 3s ease 1s infinite forwards;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; 축약 가능*/
+
+        }
+        /* @keyframes working{
+            from {background-color: yellow;}
+            to {background-color: red;}
+        } */
+        @keyframes working{
+            50% {
+                opacity: 0;
+                background-color: yellow;
+                top: 30px;
+            }
+            30% {
+                opacity: 1;
+                background-color: red;
+                top: 0px;}
+            20% {
+                opacity: 2;
+                background-color: blue;
+                top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div> </div>
+</body>
+</html>

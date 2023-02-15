@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            background: yellow;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script>
+        // $(document).ready(function () {
+        //     jquery용 자바스크립트 씀
+            
+        // }
+        // $(function(){
+        // //     $('div')
+        //     $('.box').click(function () {
+        //         $(this).hide();
+        //     })
+        //         // $('#box')
+        //  });
+         //              둘 다 가능
+
+        $(function () {
+            $("button").click(function () {
+                $(".box").toggle();
+            })
+            //show(), hide(), toggle(), fadeIn(), fadeOut(), fadeToggle(시간), fadeTo(속도, 투명도) slideDown(), slideUp(), slideToggle()
+            //콜백합수 callback ------- $(".box").fadeToggle(1000, function(){alert("ssss");)
+        });
+    </script>
+</head>
+<body>
+    <button>이 버튼을 누르면 사라짐</button>
+    <div class="box">노랑박스</div>
+
+</body>
+</html>
