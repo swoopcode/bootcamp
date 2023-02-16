@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        a.logo{
+            display: block;
+            width: 120px;
+            height: 50px;
+            font-size: 40px;
+            text-decoration: none;
+            color: #840404;
+            font-weight: bold;
+            float: left;
+            margin-right: 100px;
+        }
+        nav>ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nav>li{
+            position: relative;
+        }
+        .navi>li>a {
+            color: #840404;        
+            text-decoration: none;
+            line-height: 50px;
+
+        }
+        .sub{
+            position:absolute;
+            display: none;
+            background-color: #fff;
+            width: 200px;
+            z-index: 100;
+        }
+        .banner{
+            width: 100%;
+            height: 400px;
+            background: pink;
+            color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 70px;
+        }
+        .banner p{
+            font-size: 70px;
+            text-align: center;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+    <script>
+        // 마우스 올릴때 mouseenter, mouseover
+        // 마우스 내릴때 mouseout, mouseleave
+        // 마우스 올릴때+떠날때 : hover
+        $(셀렉터).
+            
+        
+        $(document).ready(function () {
+            $(".navi>li").hover(function () { 
+                $(this).find('.sub').fadeToggle();
+            });
+                
+        });
+            $('.title1').html("제목입니다.");
+            $('form').submit(function () {  
+                event.preventDefault();
+                if($('#username').val()==''){
+                    alert("이름을 입력하세요.");
+                    return;
+                }
+                if($('#userpass').val()==''){
+                    alert("비밀 번호를 입력하세요.");
+                    return;
+                }
+                $('form').submit();
+                ));
+            
+            $('.logo').click(function(e){
+                e.preventDefault();
+                let link = $(".logo").attr("src")
+            }
+
+        //jquery
+        // $(document).ready(function () { 
+        //     $("#p1").click(function () { 
+        //         $(this).css("color","green").slideUp(1000).slideDown(1000);
+        //      });
+        //  });//jquery
+
+        // get ---> set  --->
+        // $(선택자).text('내용'); set
+        // let 변수 = $(선택자).text(); get
+        
+        </script>
+<body>
+    <!-- <p id="p1">재미있는 jquery입니다</p> -->
+    <div class="container">
+        <nav>
+            <a href="#" class="logo">Logo</a>
+            <ul class="navi">
+                <li><a href="#">메뉴1</a>
+                    <ul class="sub">
+                        <li><a href="#">서브1</a></li>
+                        <li><a href="#">서브2</a></li>
+                        <li><a href="#">서브3</a></li>
+                        <li><a href="#">서브4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">메뉴2</a>
+                    <ul class="sub">
+                        <li><a href="#">서브1</a></li>
+                        <li><a href="#">서브2</a></li>
+                        <li><a href="#">서브3</a></li>
+                        <li><a href="#">서브4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">메뉴3</a>
+                    <ul class="sub">
+                        <li><a href="#">서브1</a></li>
+                        <li><a href="#">서브2</a></li>
+                        <li><a href="#">서브3</a></li>
+                        <li><a href="#">서브4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">메뉴4</a>
+                    <ul class="sub">
+                        <li><a href="#">서브1</a></li>
+                        <li><a href="#">서브2</a></li>
+                        <li><a href="#">서브3</a></li>
+                        <li><a href="#">서브4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        
+        </nav>
+        
+    </div>
+    <div class="banner">
+        Banner
+        </div>
+        <section class="main1">
+            <div class="container">
+                <h1 class="title1"></h1>
+                <form></form>
+                <input type="text" id="username">
+                <input type="password" id="userpass">
+                <button type="button">Submit</button>
+            </div>
+        </section>
+</body>
+</html>

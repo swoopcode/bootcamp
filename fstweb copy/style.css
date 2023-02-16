@@ -253,28 +253,33 @@ button.btn-link{
     margin-left: auto;
     margin-right: auto;
 }
-.main .container h1{
-    font-size: 50px;
-    color: #444;
-
+.container1{
+    font-size: 40px;
+    width: 300px;
+    margin: auto;
+    color: #666;
 }
-.main .container h2{
+.special{
+    font-size: 40px;
     
 }
-
-.main .container .special{
-    float: left;
-    font-size: 20px;
-    letter-spacing: 5px;
-    font-weight: 800;
-    color: #81725F;
-    
+hr{
+    border: none;
+    border-top: 1px solid #666;
+    text-align: center;
 }
-.main .container .more{
-    font-size: 25px;
+.eSpecial{
+    font-size: 18px;
+    letter-spacing: 8px;
+}
+.more{
     float: right;
-    font-weight: 900;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
 }
+
+
 .main .container material-symbols-outlined{
     font-size:10px;
     vertical-align:bottom;

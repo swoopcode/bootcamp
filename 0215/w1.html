@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 40px;
+            position: absolute;
+            background-color: aqua;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").animate({
+                    left:'250px', //왼쪽으로 250px 공간을 넣었다.
+                });
+            });
+        });
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").animate({
+                    height:'toggle' //height를 껐다 켰다하니 높이가 사라졌다 나타났다.
+                });
+            });
+        });
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").animate({
+                    left:'0px', //왼쪽으로 250px 공간을 넣었다.
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Start Animation</button>
+    <div></div>
+</body>
+</html>

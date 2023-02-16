@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ box-sizing:border-box; }
+       .container{
+          width:1200px;
+          margin:10px auto;
+       }
+       .gallbox{
+          width:500px;
+          border:1px solid #ddd;
+       }
+       .bigimg>img{
+          max-width:100%;
+       }
+       .smimg{
+          display:flex;
+          justify-content: space-between;
+       }
+       .smimg>img{
+          width:120px;
+          cursor:pointer;
+       }
+       .h1{
+        font-size: 50px;
+        display: none;
+       }
+       .h1.show{
+        display: block;
+       }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(function(){
+         $('.smimg>img').click(function(){
+            const img = $(this).attr("src");
+            $('.bigimg>img').attr("src", img);
+         });
+         $('.gallbox').click(function(){
+            
+         });
+         $('button').click(function () {
+            $('h1').toggleClass('show'); //class의 우선 순위를 이용하여 보여주고 안보이고
+           });
+      }); //jquery
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="gallbox">
+            <div class="bigimg">
+               <img src="/main_image/p_mainv_sakuragi_sp.jpg" alt="#">
+            </div>
+            <div class="smimg">
+                <img src="/main_image/pexels-evie-shaffer-5418318.jpg" alt="#">
+                <img src="/main_image/pexels-photo-15494499.jpeg" alt="#">
+                <img src="/main_image/p_mainv_sakuragi_sp.jpg" alt="#">
+                <img src="/main_image/peachout.png" alt="#">
+            </div>
+        </div>
+        <button>보이기안보이기</button>
+        <h1 class="h1 show">택스트</h1>
+       
+    </div>
+</body>
+</html>

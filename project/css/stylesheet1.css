@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'SpoqaSansNumber';
+	font-weight: 100;
+	src: local('SpoqaHanSansLight'),
+	url(SpoqaHanSansLight.eot) format('embedded-opentype'),
+	url(SpoqaHanSansLight.woff2) format('woff2'),
+	url(SpoqaHanSansLight.woff) format('woff'),
+	url(SpoqaHanSansLight.ttf) format('ttf');
+	unicode-range: U+0021-007e;
+}
+
+@font-face {
+	font-family: 'SpoqaSansNumber';
+	font-weight: 400;
+	src: local('SpoqaHanSansRegular'),
+	url(SpoqaHanSansRegular.eot) format('embedded-opentype'),
+	url(SpoqaHanSansRegular.woff2) format('woff2'),
+	url(SpoqaHanSansRegular.woff) format('woff'),
+	url(SpoqaHanSansRegular.ttf) format('ttf');
+	unicode-range: U+0021-007e;
+}
+
+@font-face {
+	font-family: 'SpoqaSansNumber';
+	font-weight: 700;
+	src: local('SpoqaHanSansBold'),
+	url(SpoqaHanSansBold.eot) format('embedded-opentype'),
+	url(SpoqaHanSansBold.woff2) format('woff2'),
+	url(SpoqaHanSansBold.woff) format('woff'),
+	url(SpoqaHanSansBold.ttf) format('ttf');
+	unicode-range: U+0021-007e;
+}

@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+<meta name="google-site-verification" content="xfAsz914fZL-Hz0TPlzNbfP2aJH7w5ZMMxOy1c39USM">
+<meta name="viewport" content="width=1240">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta property="og:title" content="모든 이야기의 시작 - Daum 카페">
+<meta property="og:url" content="http://top.cafe.daum.net">
+<meta property="og:image" content="https://t1.daumcdn.net/cafe_image/cafe_meta_image_190529.png">
+<meta property="og:description" content="매일매일 올라오는 즐거운 카페 이야기">
+<title>카페홈 - Daum 카페</title>
+
+<link rel="stylesheet" href="css/stylesheet1.css" type="text/css" media="all" onload="if(media!='all')media='all'">
+<link rel="stylesheet" href="css/stylesheet2.css" type="text/css" media="all" onload="if(media!='all')media='all'">
+
+<link rel="stylesheet" href="css/stylesheet3.css" type="text/css">
+<script type="text/javascript" src="//s1.daumcdn.net/svc/original/U03/cssjs/jquery/jquery-1.10.2.min.js"></script>
+<script src="//t1.daumcdn.net/cafe_cj/pctop/build/js/top/common-82cf0bce6f.js"></script>
+<script src="//t1.daumcdn.net/tiara/js/v1/tiara.min.js"></script>
+<script>
+	var CAFEAPP = {
+		LOGIN_URL : "https://logins.daum.net",
+		MEMBER_URL : "https://member.daum.net"
+	};
+	var IS_LOGIN = '';
+	var IS_DEV = false;
+	</script>
+<script type="text/javascript" src="//m1.daumcdn.net/svc/original/U03/cssjs/pcSuggest/suggest-1.2.14.min.js" charset="utf-8"></script>
+
+<script type='text/javascript'>
+    document.domain = 'daum.net';
+
+	jQuery(function() {
+		jQuery("body")
+			.data('MSGBOX_SERVER', '')
+	});
+
+	window.key="${WINDOW_KEY}";
+</script>
+
+
+</head>
+<body>
+	<div id="daumIndex" class="index_list">
+		<a href="#daumHead">메뉴 바로가기</a>
+		<a href="#cSub">내카페 바로가기</a>
+		<a href="#mArticle">인기글 바로가기</a>
+		<a href="#mAside">카페 공지 바로가기</a>
+		<a href="#fanCafe">팬카페 바로가기</a>
+		<a href="#mEtc">카테고리별 랭킹보기</a>
+	</div>
+	<div id="wrapMinidaum"></div>
+<script type="text/javascript">
+var minidaum_options = {
+	// logout 시 return url 변경 여부 flag : default: false - 다음탑으로 이동
+	enableLogoutRetun: false, // false - 다음탑으로 이동, true - 현재페이지 혹은 returnUrl 값으로 이동
+	returnUrl: '', // default - 현재페이지(window.location.href)
+
+	// 실시간 이슈 사용 여부, default: false
+	disableHotissue: false, // false일 경우 사용, true일 경우 미사용
+
+	// 로고 사용 여부, default: false
+	disableLogo: false, // false일 경우 사용, true일 경우 미사용
+
+	// 티아라 사용 여부, default: false
+	disableTracker: true, // false일 경우 사용, true일 경우 미사용
+
+	// 플래시에 의한 레이어 가림 현상 방지 사용 여부, default: false
+	enableShield: false // false일 경우 미사용, true일 경우 사용
+}
+</script>
+<script src="https://go.daum.net/minidaum_pc.daum" charset="utf-8" type="text/javascript" async defer></script>
+	<div id="daumWrap"  class="user_logout" >
+		<div id="startHiddenLayer" class="notice_daum">
+	<div id="wrongCafeLayer" class="notice_cafe">
+		<strong class="desc">입력하신 주소의 <em>카페</em>가 없습니다.<br>다시한번 확인해 주세요.</strong>
+		<button id="closeCafeLayerBtn" type="button" class="btn_close"><span class="screen_out">닫기</span></button>
+	</div>
+</div>
+<div id="daumHead" role="banner">
+	<div class="inner_daumhead">
+		<h1><a href="/_c21_/home" id="daumServiceLogo" class="link_logo"><span class="ico_cafenew ico_logo">cafe</span></a></h1>
+		<div id="daumGnb" role="navigation">
+			<h2 class="screen_out">카페 메인메뉴</h2>
+			<ul class="gnb_cafe">
+				<li  class="on" aria-current="page" ><a href="/_c21_/home" class="link_item">홈</a></li>
+				<li ><a href="/_c21_/fancafe_list" class="link_item">팬카페</a></li>
+				<li ><a href="/_c21_/cafe_ranking" class="link_item">카페랭킹</a></li>
+				<li ><a href="/_c21_/my_cafe" class="link_item">내카페</a></li>
+				<li><a href="/_c21_/2020_online_class" target="_blank" class="link_item online_class">온라인 교실</a></li>
+			</ul>
+		</div>
+		<div class="search_cafe">
+			<h2 class="screen_out">검색</h2>
+
+			<form id="daumSearch" name="search" action="/_c21_/search" method="get">
+				<fieldset class="fld_inside opt_on">
+					<legend class="screen_out">검색어 입력폼</legend>
+					<div class="search_choice">
+						<div id="daumSearchOption" class="opt_g">
+							<div class="opt_selected">
+								<a href="javascript:" id="selectedOption" class="tf_opt" aria-expanded="false">
+									<span class="selected_option_text">카페검색</span>
+									<span class="ico_cafetop ico_arrow">옵션</span>
+								</a>
+							</div>
+							<div id="searchOptionLayer" class="opt_layer">
+								<ul class="list_opt">
+									<li class="on">
+										<a href="javascript:" id="radAll" class="link_opt">카페검색</a>
+									</li>
+									<li>
+										<a href="javascript:" id="radDaumSearch" class="link_opt">통합검색</a>
+									</li>
+									<li>
+										<a href="javascript:" id="radCafeName" class="link_opt">카페이름</a>
+									</li>
+									<li>
+										<a href="javascript:" id="radCafeArticle" class="link_opt">카페글</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="wrap_search">
+							<label for="q" class="lnb_search">
+								<span class="screen_out">검색입력창</span>
+								<input type="text" class="tf_keyword inp_search" id="q" name="q" value="" placeholder="검색어를 입력하세요" title="검색어 입력" spellcheck="false" autocomplete="off">
+								<span aria-live="polite" class="screen_out"></span>
+							</label>
+						</div>
+					</div>
+					<button type="submit" class="btn_search_top btn_search_open"><span class="ico_cafenew ico_search">검색창열기</span></button>
+
+					<input type="hidden" name="search_opt" id="searchOption" value="">
+					<input type="hidden" name="w" value="cafe">
+					<input type="hidden" name="f" value="section">
+					<input type="hidden" name="SA" value="daumsec">
+					<input type="hidden" name="m" id="search_m" value="">
+					<input type="hidden" name="lpp" value="10">
+					<input type="hidden" name="nil_profile" value="vsearch">
+					<input type="hidden" name="nil_src" value="cafe">
+				</fieldset>
+			</form>
+
+			<div id="suggest_box_wrap">
+				<div id="suggest_box"></div>
+			</div>
+			<script type="text/javascript" src="//m1.daumcdn.net/svc/original/U03/cssjs/pcSuggest/suggest-1.2.14.min.js" charset="utf-8"></script>
+		</div>
+	</div>
+</div>
+<hr class="hide">
+
+		
+		<div id="daumContent"></div>
+
+					<script src="//t1.daumcdn.net/adfit/static/ad-native.min.js"></script>
+				<script src="//t1.daumcdn.net/cafe_cj/pctop/build/js/common-lib-cb379b65f0.min.js"></script>
+		<script src="//t1.daumcdn.net/cafe_cj/pctop/build/js/home-dd0c7ae852.min.js"></script>
+		<script>
+			jQuery(function(){
+				jQuery('#daumSearch').submit(); 
+			});		</script>
+		
+<a id="link_top"><span class="ico_cafenew ico_top">맨위로 가기</span></a>
+<div id="daumFoot" role="contentinfo">
+
+	<div class="inner_footer">
+		<h2 class="tit_cafe"><span class="ico_cafenew ico_cafe">cafe</span><span class="screen_out">서비스 이용정보</span></h2>
+		<ul class="list_info">
+			<li><a class="link_info" href="https://policy.daum.net/info/info" target="_blank">서비스 약관/정책</a></li>
+			<li><a href="https://cs.daum.net/redbell/top.html" target="_blank" class="link_info">권리침해신고</a></li>
+			<li><a href="/_c21_/agreement" class="link_info">이용약관</a></li>
+			<li><a href="https://cs.kakao.com/conflict" target="_blank" class="link_info">상거래 피해구제신청</a></li>
+			<li><a href="/_c21_/guide" class="link_info">카페운영정책</a></li>
+			<li><a class="link_info" href="https://www.kakao.com/policy/safeguard?lang=ko" target="_blank">청소년보호정책</a></li>
+			<li><a class="link_info" href="https://policy.daum.net/info_protection/info_protection" target="_blank"><strong>개인정보처리방침</strong></a></li>
+			<li><a class="link_info" href="https://cs.daum.net/faq/36.html" target="_blank">고객센터</a></li>
+			<li><a href="https://cs.daum.net/question/36.html" target="_blank" class="link_info">문의하기</a></li>
+		</ul>
+		<small class="txt_copyright">ⓒ <a href="https://www.kakaocorp.com/" target="_blank" class="link_kakao">Kakao Corp.</a></small>
+		<span class="bg_footer"></span>
+	</div>
+</div>
+	</div>
+</body>
+
+</html>
